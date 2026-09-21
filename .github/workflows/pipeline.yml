@@ -37,6 +37,8 @@ jobs:
 
     # Download the Databricks CLI. See https://github.com/databricks/setup-cli
     - uses: databricks/setup-cli@main
+      with:
+       version: "0.221.0"
 
     - name: Extract branch name
       shell: bash
